@@ -13,5 +13,8 @@
 //   }
 //   return temp;
 // }
-const solution = (str) => str ? str.match(/.{1,2}/g).map(s => s.length === 1 ? s + '_' : s) : [];
+// const solution = (str) => str ? str.match(/.{1,2}/g).map(s => s.length === 1 ? s + '_' : s) : [];
+function solution(s){
+  return (s+"_").match(/.{2}/g)||[]
+}
 console.log(solution("hello"));
